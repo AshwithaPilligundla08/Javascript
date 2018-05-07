@@ -1,0 +1,18 @@
+function basicOp(operation, value1, value2)
+{
+  var total;
+  switch(operation)
+  {
+  case '+' :total = value1+value2;
+            break;
+  case '-' :total = value1-value2;
+            break;
+  case '*' :total = value1*value2;
+            break;
+  case '/' :total = value1/value2;
+            break;
+  default: total=0;
+            break;  
+  }
+  return total;
+}
