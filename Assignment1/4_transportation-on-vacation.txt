@@ -1,0 +1,6 @@
+function rentalCarCost(d) {
+  var rent = 40;
+  var totalAmount = rent * d;
+  
+  return (d>=7)? totalAmount - 50 : (d>=3 && d<7 ? totalAmount - 20: totalAmount);  
+}

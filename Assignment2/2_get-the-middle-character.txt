@@ -1,0 +1,7 @@
+function getMiddle(s)
+{
+  var length = s.length ;
+  var middle = parseInt(length/2);
+  
+  return length == 1 ? s : ( length % 2 != 0  ? s[middle] : s.substring(middle-1,middle+1)) ;
+}

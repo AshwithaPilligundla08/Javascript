@@ -1,0 +1,22 @@
+var numberFunction = function(number){
+     return function(p){
+       if (p  === undefined) { return number; }  else { return p(number); }
+     };
+};
+
+var zero = numberFunction(0);
+var one = numberFunction(1);
+var two = numberFunction(2);
+var three = numberFunction(3);
+var four = numberFunction(4);
+var five = numberFunction(5);
+var six = numberFunction(6);
+var seven = numberFunction(7);
+var eight = numberFunction(8);
+var nine = numberFunction(9);
+
+function plus(fun) {  return function(l){ return l + fun}; }
+function minus(fun) { return function(l){ return l - fun}; }
+function times(fun) { return function(l){ return l * fun}; }
+function dividedBy(fun) { return function(l){ return l / fun}; }
+

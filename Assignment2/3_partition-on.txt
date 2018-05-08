@@ -1,0 +1,11 @@
+function partitionOn(pred, items) {
+
+var evenArray = items.filter(pred);
+var oddArray = items.filter(i => !pred(i)); 
+ 
+items.length = 0;
+ 
+items.push.apply(items, oddArray.concat(evenArray));
+ 
+return evenArray.length;
+}
