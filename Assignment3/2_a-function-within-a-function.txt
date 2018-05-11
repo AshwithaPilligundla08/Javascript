@@ -1,0 +1,4 @@
+function always (n) {
+   var innerfun =  function() { return n; }
+   return innerfun;
+}

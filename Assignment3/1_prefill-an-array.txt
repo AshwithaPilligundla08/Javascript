@@ -1,0 +1,11 @@
+function prefill(n, v) {
+
+var isNegative =  n < 0 ? true : false;
+
+if(isNaN(n) || !Number.isSafeInteger(+n) || typeof(n) === "boolean" || isNegative)
+throw new TypeError(n + " is invalid");
+
+var array = Array.apply(null,Array(n));
+
+return n == 0 ? [] : array.fill(v,0); 
+}
